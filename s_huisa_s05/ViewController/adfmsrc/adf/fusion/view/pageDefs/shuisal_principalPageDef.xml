@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<pageDefinition xmlns="http://xmlns.oracle.com/adfm/uimodel" version="12.2.1.9.14" id="shuisal_principalPageDef"
+                Package="adf.fusion.view.pageDefs">
+  <parameters/>
+  <executables>
+    <variableIterator id="variables"/>
+    <taskFlow id="shuisa_tf_reutilizable1" taskFlowId="/WEB-INF/shuisa_tf_reutilizable.xml#shuisa_tf_reutilizable"
+              activation="deferred" xmlns="http://xmlns.oracle.com/adf/controller/binding">
+      <parameters>
+        <parameter id="inputTitle" value="leftpanel"/>
+      </parameters>
+    </taskFlow>
+    <taskFlow id="shuisa_tf_reutilizable2" taskFlowId="/WEB-INF/shuisa_tf_reutilizable.xml#shuisa_tf_reutilizable"
+              activation="deferred" xmlns="http://xmlns.oracle.com/adf/controller/binding">
+      <parameters>
+        <parameter id="inputTitle" value="right panel"/>
+      </parameters>
+    </taskFlow>
+  </executables>
+  <bindings/>
+</pageDefinition>
